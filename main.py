@@ -1,10 +1,3 @@
-import os
+from app.config import APP_ENV
 
-from dotenv import load_dotenv
-
-load_dotenv()
-
-app_env = os.getenv("APP_ENV")
-
-print("SOL AI Agent")
-print("Environment:", app_env)
+print(f"Environment: {APP_ENV}")
